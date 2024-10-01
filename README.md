@@ -27,8 +27,8 @@ I WANT to have a better understanding of what I have as income and my expenses
 
 ## Links
 
-[Project Kanban:](https://github.com/orgs/Stray-Tech/projects/1/views/1)
-[Lucid Chart:](https://lucid.app/lucidchart/6f0988f9-e6c3-46be-9adb-78d16b22230e/edit?viewport_loc=-139%2C-319%2C2219%2C1295%2C0_0&invitationId=inv_ad9baba7-dbb3-49c2-a529-0e54825cb00b)
+- [Project Kanban](https://github.com/orgs/Stray-Tech/projects/1/views/1)
+- [Lucid Chart](https://lucid.app/lucidchart/6f0988f9-e6c3-46be-9adb-78d16b22230e/edit?viewport_loc=-139%2C-319%2C2219%2C1295%2C0_0&invitationId=inv_ad9baba7-dbb3-49c2-a529-0e54825cb00b)
 
 ## Installation
 
