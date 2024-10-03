@@ -13,7 +13,8 @@ class Pots:
     def withdraw(self, amount) -> None:
         self.pot_amount -= amount
 
-    def add_transaction(self, title="", description="", amount=0, sender="", receiver=""):
+    def add_transaction(self, title="", description="", amount=0,
+                         sender="", receiver=""):
         new_transaction={
             "transaction_id" : len(self.pot_transactions)+1,
             "date" : datetime.today().strftime('%Y-%m-%d %H:%M:%S'),
