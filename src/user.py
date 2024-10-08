@@ -32,4 +32,4 @@ def create_user(name:str, balance:int) -> None:
 def delete_user(ID:str) -> None:
     del users[ID]
 
-#
+# user class should work with other classes to keep information specific to an individual user.
