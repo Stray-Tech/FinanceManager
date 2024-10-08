@@ -1,8 +1,8 @@
 # TODO Import Class Bills to test food shopping expense
-
 from bills import Bills
 
 # TODO take and show bill name
+# TODO show total food shopping bills inc name and cost
 food_shopping = []
 def create_bill():
     continue_adding_bills = True
@@ -28,4 +28,3 @@ create_bill()
 
 # TODO pay bill showing receiver sender and bill cost
 # TODO show current balance and balance after paying bill
-# TODO show total food shopping bills inc name and cost
