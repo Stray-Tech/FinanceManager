@@ -26,3 +26,6 @@ class Pots:
         }
 
         self.pot_transactions.append(new_transaction)
+
+# example use of a pot
+groceriesPot = Pots(name="Groceries Pot")
