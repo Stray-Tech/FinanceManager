@@ -1,14 +1,17 @@
 from datetime import datetime
 class Bills:
-    def __init__(self, name, currency, amount):
+    def __init__(self, name, amount, currency = "£"):
         self.bill_name = name
         self.bill_currency = currency
         self.bill_amount = amount
         self.pot_transactions = []
 
 
+    def show_bill(self):
+        return f"{self.bill_name} - {self.bill_currency}{self.bill_amount}"
+    
     def pay_bill(self, amount):
-        self.bill_amount += amount
+        self.bill_amount -= amount
 
     def add_transaction(self, title="", description="", amount=0,
                          sender="", receiver=""):
