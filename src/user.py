@@ -8,6 +8,14 @@ class User:
     Arguments:
         name {string} -- name of the user
         balance {number} -- initial balance from all current accounts
+    
+    Properties:
+        ID {string} -- a constant unique identifier
+        name {string} -- name of the user
+        balance {number} -- initial balance from all current accounts
+    
+    Methods:
+        get_id {function} -- returns user's ID
     """  
     def __init__(self, name:str, balance:float) -> None:
         self.ID = f"{len(users)+1}_{name}_{datetime.timestamp}"
