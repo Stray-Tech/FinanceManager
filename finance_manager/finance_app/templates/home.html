@@ -10,8 +10,16 @@
     <nav></nav>
 </header>
 <main>
-    <h1>Finance Manager</h1>
-    <div></div>
+    <div id="title">
+        <h1>Finance Manager</h1>
+    </div>
+    <div id="app-drawer">
+        {% for app in apps %}
+        <div class="app">
+            <h3> {{ app.name }} </h3>
+        </div>
+        {% endfor %}
+    </div>
 </main>
 <footer></footer>
 {% endblock %}

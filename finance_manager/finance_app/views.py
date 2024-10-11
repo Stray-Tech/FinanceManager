@@ -1,9 +1,10 @@
-from django.shortcuts import render, HttpResponse
-from .models import TodoItem
+from django.shortcuts import render
+from .models import TodoItem, AppItem
 
 # Create your views here.
 def home(request):
-    return render(request, "home.html")
+    items = AppItem.objects.all()
+    return render(request, "home.html", {"apps": items})
 
 def todos(request):
     items = TodoItem.objects.all()

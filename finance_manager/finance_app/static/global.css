@@ -4,7 +4,10 @@
     color: #d3d3d3;
 }
 body{
+    position: relative;
     height: 100vh;
     width: 100vw;
     background-color: #282c34;
+    display: flex;
+    justify-content: center;
 }
