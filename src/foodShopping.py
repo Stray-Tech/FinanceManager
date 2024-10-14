@@ -27,4 +27,6 @@ create_bill()
 
 
 # TODO pay bill showing receiver sender and bill cost
+def get_payment_information():
+    
 # TODO show current balance and balance after paying bill
