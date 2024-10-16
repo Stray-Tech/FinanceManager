@@ -6,17 +6,23 @@
 {% endblock %}
 {% block content %}
 
-<header>
-    <nav></nav>
-</header>
+{% block header %}
+{% endblock %}
 <main>
     <div id="title">
         <h1>Finance Manager</h1>
     </div>
     <div id="app-drawer">
         {% for app in apps %}
-        <div class="app">
+        <div class="app {{ app.name }}-class">
             <h3> {{ app.name }} </h3>
+            {% if app.name == "Links" %}
+            <ul style="list-style-type:none;">
+                <li style="margin-left: 2rem;">
+                    <a href="http://localhost:8000/finance_app/test">Test web-link</a>
+                </li>
+            </ul>
+            {% endif %}
         </div>
         {% endfor %}
     </div>
