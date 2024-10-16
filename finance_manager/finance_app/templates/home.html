@@ -2,12 +2,11 @@
 {% load static %}
 {% block title %} Home Page {% endblock %}
 {% block css %}
-    <link rel="stylesheet" href="{% static 'home.css' %}">
+{{ block.super }}
+<link rel="stylesheet" href="{% static 'home.css' %}">
 {% endblock %}
 {% block content %}
-
-{% block header %}
-{% endblock %}
+{{ block.super }}
 <main>
     <div id="title">
         <h1>Finance Manager</h1>

@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}Document{% endblock %}</title>
+    {% block css %}
     <link rel="stylesheet" href="{% static 'global.css' %}">
-    {% block css %}{% endblock %}
+    {% endblock %}
 </head>
 <body>
     {% block header %}
     <header>
+        HEADER
         <nav>
-            
         </nav>
     </header>
     {% endblock %}
