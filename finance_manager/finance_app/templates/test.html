@@ -2,9 +2,10 @@
 {% load static %}
 {% block title %} Test Page {% endblock %}
 {% block css %}
+    {{ block.super }}
     <link rel="stylesheet" href="{% static 'test.css' %}">
 {% endblock %}
-{% block header %}
+<!-- {% block header %}
 {% endblock %}
 {% block content %}
-{% endblock %}
+{% endblock %} -->
