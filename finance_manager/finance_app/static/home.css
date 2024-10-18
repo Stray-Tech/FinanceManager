@@ -19,3 +19,12 @@
     height: 250px;
     border: 1px solid white;
 }
+
+.form{
+    margin: 2rem 0;
+    textarea {
+        color: black;
+        height: 50px;
+        width: 300px;
+    }
+}

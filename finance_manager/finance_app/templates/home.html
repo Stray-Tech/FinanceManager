@@ -6,7 +6,6 @@
 <link rel="stylesheet" href="{% static 'home.css' %}">
 {% endblock %}
 {% block content %}
-{{ block.super }}
 <main>
     <div id="title">
         <h1>Finance Manager</h1>
@@ -24,6 +23,9 @@
             {% endif %}
         </div>
         {% endfor %}
+    </div>
+    <div class="form">
+        {{ form }}
     </div>
 </main>
 <footer></footer>

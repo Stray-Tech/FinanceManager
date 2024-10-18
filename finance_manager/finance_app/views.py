@@ -1,10 +1,11 @@
 from django.shortcuts import render
-from .models import TodoItem, AppItem
+from .models import TodoItem, AppItem, UserInput
 
 # Create your views here.
 def home(request):
     items = AppItem.objects.all()
-    return render(request, "home.html", {"apps": items})
+    user_form = UserInput
+    return render(request, "home.html", {"apps": items, "form": user_form})
 
 def todos(request):
     items = TodoItem.objects.all()
