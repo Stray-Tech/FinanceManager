@@ -13,26 +13,3 @@ class UserInput(Form):
         "cols": "10"
     }
     user_input = CharField(widget=Textarea(attrs=attrs), label="Bill Description:")
-    # user_input.
-    # user_input = CharField(widget=MyWidget, label="Bill Description:")
-
-# class MyForm(ModelForm):
-#     class Meta:
-#         # model = MyModel
-#         fields = ['myfield']
-
-#     def __init__(self, *args, **kwargs):
-#         super().__init__(*args, **kwargs)
-#         self.fields['myfield'].widget.attrs.update({'class': 'myfield-wrapper'})
-
-
-# class YourForm(Form):
-#     ...
-#     def __init__(self, *args, **kwargs):
-#         super().__init__(*args, **kwargs)
-#         self.helper = FormHelper()
-#         self.helper.layout = Layout(Div(  # or Fieldset, MultiField, etc.
-#             'field1',
-#             'field2',
-#             template='forms/p.html'
-#         ))
