@@ -1,8 +1,8 @@
 {% extends "base.html" %} 
 {% load static %}
+{% load filters %}
 {% block title %} Home Page {% endblock %}
 {% block css %}
-{{ block.super }}
 <link rel="stylesheet" href="{% static 'home.css' %}">
 {% endblock %}
 {% block content %}
@@ -15,8 +15,8 @@
         <div class="app {{ app.name }}-class">
             <h3> {{ app.name }} </h3>
             {% if app.name == "Links" %}
-            <ul style="list-style-type:none;">
-                <li style="margin-left: 2rem;">
+            <ul>
+                <li>
                     <a href="http://localhost:8000/finance_app/test">Test web-link</a>
                 </li>
             </ul>
@@ -24,9 +24,13 @@
         </div>
         {% endfor %}
     </div>
-    <div class="form">
-        {{ form }}
-    </div>
+    <form method="POST">
+        {% csrf_token %}
+        {% include 'forms/custom_div.html' %}
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
 </main>
 <footer></footer>
 {% endblock %}
