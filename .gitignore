@@ -2,4 +2,5 @@
 .venv
 .DS_Store
 dependencies
+**_pycache_
 **__pycache__
