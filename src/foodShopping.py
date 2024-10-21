@@ -31,6 +31,11 @@ create_bill()
 
 # TODO pay bill showing receiver sender and bill cost
 def get_payment_information():
-    food_shopping[0].bill_transactions[0]['receiver']
+    for x in food_shopping:
+        print(x.show_bill())
 get_payment_information()
 # TODO show current balance and balance after paying bill
+def get_balance():
+    pass
+def current_balance():
+    pass
