@@ -1,14 +1,18 @@
 from django.shortcuts import render
 from .models import TodoItem, AppItem
-from .forms import UserInput
-from .templatetags.filters import add_class
+from .forms import BillTitle, BillDescription
+#from .templatetags.filters import add_class
 
 # Create your views here.
 def home(request):
     items = AppItem.objects.all()
-    user_form = UserInput()
+    bill_title = BillTitle()
+    bill_description = BillDescription()
     #add_class = add_class
-    return render(request, "home.html", {"apps": items, "form": user_form, "add_class": add_class})
+    return render(request, "home.html", {
+        "apps": items, 
+        "bill_form": [bill_title, bill_description]
+    })
 
 def todos(request):
     items = TodoItem.objects.all()

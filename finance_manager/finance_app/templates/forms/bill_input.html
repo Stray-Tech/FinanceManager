@@ -1,8 +1,9 @@
-{% for field in form %}
-    <div class="{{ form.attrs.data.wrapperClass }}">
+{% load filters %}
+<div class="{{ 'form'|add_class }}">
+    {% for field in bill_form %}
         {{ field.label_tag }} {{ field }}
         {% if field.errors %}
             <div class="error">{{ field.errors }}</div>
         {% endif %}
-    </div>
-{% endfor %}
+    {% endfor %}
+</div>

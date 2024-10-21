@@ -1,15 +1,23 @@
-from django.forms import Form, CharField, Textarea, ModelForm
+from django.forms import Form, CharField, TextInput, Textarea
 
-class UserInput(Form):
+class BillTitle(Form):
     attrs = {
         "data": {
             "wrapperClass": "form"
         },
         "type": "text",
-        "id": "user-input",
-        "name": "user-input",
-        "placeholder": "Enter text here",
-        "rows": "4",
-        "cols": "10"
+        "id": "bill-title",
+        "placeholder": "Enter title here"
+    }
+    user_input = CharField(widget=TextInput(attrs=attrs), label="Bill Title:")
+
+class BillDescription(Form):
+    attrs = {
+        "data": {
+            "wrapperClass": "form"
+        },
+        "type": "text",
+        "id": "bill-description",
+        "placeholder": "Enter description here"
     }
     user_input = CharField(widget=Textarea(attrs=attrs), label="Bill Description:")

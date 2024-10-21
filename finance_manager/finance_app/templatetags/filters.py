@@ -10,8 +10,7 @@ register = template.Library()
 
 # register = template.Library()
 
-@register.filter
-def add_class(field, css_class):
-    attrs = field.attrs
-    attrs['class'] = css_class
-    return field
+@register.filter(name="add_class")
+def add_class(css_class):
+    # wrapperClass = field.attrs.data.wrapperClass
+    return css_class
