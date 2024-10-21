@@ -1,0 +1,9 @@
+{% load filters %}
+<div class="{{ 'form'|add_class }}">
+    {% for field in bill_form %}
+        {{ field.label_tag }} {{ field }}
+        {% if field.errors %}
+            <div class="error">{{ field.errors }}</div>
+        {% endif %}
+    {% endfor %}
+</div>

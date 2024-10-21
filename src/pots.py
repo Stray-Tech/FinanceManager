@@ -1,8 +1,9 @@
 from datetime import datetime
 
 class Pots:
-    def __init__(self, name="new pot", currency="£", amount=0) -> None:
+    def __init__(self, name="new pot", description="N/A", currency="£", amount=0) -> None:
         self.pot_name = name
+        self.description = description
         self.pot_currency = currency
         self.pot_amount = amount
         self.pot_transactions = []
@@ -26,3 +27,6 @@ class Pots:
         }
 
         self.pot_transactions.append(new_transaction)
+
+# example use of a pot
+groceriesPot = Pots(name="Groceries Pot")

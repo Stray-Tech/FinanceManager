@@ -1,0 +1,36 @@
+{% extends "base.html" %} 
+{% load static %}
+{% load filters %}
+{% block title %} Home Page {% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock %}
+{% block content %}
+<main>
+    <div id="title">
+        <h1>Finance Manager</h1>
+    </div>
+    <div id="app-drawer">
+        {% for app in apps %}
+        <div class="app {{ app.name }}-class">
+            <h3> {{ app.name }} </h3>
+            {% if app.name == "Links" %}
+            <ul>
+                <li>
+                    <a href="http://localhost:8000/finance_app/test">Test web-link</a>
+                </li>
+            </ul>
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+        {% include 'forms/bill_input.html' %}
+        <div class="button">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</main>
+<footer></footer>
+{% endblock %}

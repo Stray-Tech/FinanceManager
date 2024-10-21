@@ -1,0 +1,57 @@
+#title, .app h3{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#app-drawer{
+    padding-top: 2rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    height: fit-content;
+    gap: 10px;
+}
+
+.app{
+    width: 250px;
+    height: 250px;
+    border: 1px solid white;
+}
+
+.form{
+    position: relative;
+    margin-top: 2rem;
+    >* {
+        margin-bottom: 0.5rem;
+    }
+    input, textarea {
+        color: black;
+    }
+    label {
+        margin-right: 0.5rem;
+    }
+    input {
+        margin-left: 2.85rem;
+    }
+    textarea {
+        vertical-align: top;
+        height: 100px;
+        width: 82%;
+        padding: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+}
+
+.button{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    margin-bottom: 2rem;
+    button{
+        color: black;
+        padding: 0.5rem;
+        margin-right: 0.5rem;
+    }
+}
